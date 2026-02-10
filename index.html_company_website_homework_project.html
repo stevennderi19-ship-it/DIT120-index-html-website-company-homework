@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <title>NovaTech Solutions LTDompany Registration Form </title>
+        </head>
+        <body>
+            <h1>NovaTech Solutions LTD</h1>
+            <h2>Company Registration / Service Request Form</h2>
+
+            <form method="post" action="#">
+
+                <!--Personal Information-->
+                <fieldsite>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname"name="fullname"value="JohnMwangi"
+                    reguired minlengths="3"maxlength="50"><br><br>
+
+                    <label for= "email" >Email Adress:</label><br>
+                    <input type="text" id="fullname"><name="fullname"value="JohnMwangi" required minlength="3"maxlength="50"
+                    ="50"><br><br>
+
+                    <label for="email">Email Adress</label><br>
+                    <input type ="email" id="email"name ="email"
+                    value="Johnmwang@gmail.com"required><br><br>
+                    <label for="adress">Physical Adress:</label><br>
+                    <input type="text"id="adress"name="adress"
+                    value="Nairobi,Kenya"required minlength="5"maxlength="100"><br><br>
+                    <label for ="phone">phone number:</label><br>
+                    <input type="tel"id="phone"name="phone"value="0712345678"pattern="[0-9]{10}"required><br><br>
+                </fieldsite>
+                
+                <!--Company Information-->
+                <fieldset>
+                    <legend>company information</legend>
+                    <label>for="company name">company name:</label>/label><br>
+                    <input type="text"id="company name"name="company name"value="NovaTech Solutions Ltd"
+                    required><br><br>
+                    <label for="website">company Website:</label><br>
+                    <input type="url"id="website"name="website"
+                    value="https://www.novatechsolutions.com"><br><br>
+                    <label for="size">company size</label><br>
+                    <select id="size"name="size"required><option value="">--Select Company Size--</option><option>
+                        value="small">1-10 Employees</option>
+                        <option value="medium"selected>11-50 Employees</option><option value="large"
+                    >50+Employees</option>
+                    </select><br><br>
+                    <label>for="industry">industry:</label><br>
+                    <input type="text"id="industry"name="industry"value="information Technology"
+                    required><br><br>
+                    </fieldset>
+                    <!--Service Request-->
+                    <fieldset>
+                        <legend>Service  Request</legend>
+                        <p>Service Type:</p>
+                        <input type="radio"id="consulting"name="service"value="consulting"
+                        checked required><label for="consulting">consulting</label><br>
+                        <input type="radio"id="development"name="service"value="development">
+                        <label for="development">software development</label><br>
+                        <input type="radio"id="support"name="service"
+                        value="support">Technical Support</label><br><br>
+                        <p>Preferred Contact Method:</p>
+                        <input type="checkbox"id="contact_email"name="contact_method"value="email"
+                        checked><label for="contact_email">Email</label><br>
+                        <input type="checkbox"id="contact_phone"name="contact_method"
+                        value="phone"checked><label for="contact_phone">Phone</label><br><br>
+                        <label for="date">Preferred Appointment Date:</label><br><input type="date"id="date"
+                        name="date"value="2026-02-15"required><br><br>
+                        <label for="time">Preferred Appointment Time:</label><br>
+                        <input type="time"id="time"name="time"value="10:30"required><br><br>
+                        <label for="budget">Estimated Budget (USD):</label><br>
+                        <input type="number"id="budget"name="budget"value="5000"min="100"
+                        max="100000"required><br><br>
+                        </fieldset>
+                        <!--Message and Agreement-->
+                        <fieldset>
+                            <legend>message and Agreement</legend><label for="message">Additional Information:</label><br>
+                            <textarea id="message"name="message"rows="5"cols="40"minlength="10"
+                            maxlength="500">we require a complete company website and ongoing technical support.</textarea>
+                            <br><br>
+                        </fieldset>
+                        <input type="submit"value="Submit Form">
+                        <input type="reset"value="reset"value="Reset Form">
+            </form>
+        </body>
+</html>
+                
+
+
+
+
+
+
+             
+
